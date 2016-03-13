@@ -1,0 +1,7 @@
+fr:
+  pages:
+    home:
+      find_place: 'Trouver un lieu de partage'
+  places:
+    new:
+      create_place: 'Créer un lieu pour partager des trucs'
