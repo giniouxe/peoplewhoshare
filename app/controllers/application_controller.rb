@@ -7,12 +7,13 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def default_url_options(options = {})
-    { locale: I18n.locale }.merge options
+    { locale: I18n.locale }.merge(options)
   end
 
   private
 
   def set_current_locale
-    I18n.locale = params[:locale]
+    current_locale = params[:locale] ? params[:locale] : 'en'
+    I18n.locale = current_locale
   end
 end

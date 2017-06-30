@@ -23,8 +23,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'foundation-rails'
 
-gem 'slim'
-
 gem 'simple_form'
 gem 'country_select'
 
