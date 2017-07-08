@@ -2,6 +2,36 @@ en:
   pages:
     home:
       find_place: 'Find a sharing place'
+      create_new_place: 'Create a new sharing place'
   places:
     new:
       create_place: 'Create a place to share things'
+    create:
+      create_place_sucess: 'Bravo! You just created a new sharing place.'
+      create_place_failure: 'Arf! The creation of your sharing place encountered a little problem:'
+    show:
+      location: 'Location'
+    edit:
+      edit_place: 'Edit %{place}'
+  active_record:
+    models:
+      place:
+        one: 'Place'
+        other: 'Places'
+    attributes:
+      place:
+        name: 'Name'
+        description: 'Description'
+        address: 'Address'
+        city: 'City'
+        zipcode: 'Zipcode'
+        country: 'Country'
+  simple_form:
+    labels:
+      defaults:
+        name: 'Name'
+        description: 'Description'
+        address: 'Address'
+        city: 'City'
+        zipcode: 'Zipcode'
+        country: 'Country'

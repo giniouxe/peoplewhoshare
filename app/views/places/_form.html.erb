@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="medium-10 medium-centered columns">
+    <%= simple_form_for @form, url: @form.place do |f| %>
+      <%= f.input :name %>
+      <%= f.input :description, as: :text %>
+      <%= f.input :address %>
+      <%= f.input :city %>
+      <%= f.input :zipcode %>
+      <%= f.input :country %>
+
+      <%= f.button :submit, class: "success expanded button" %>
+    <% end %>
+  </div>
+</div>

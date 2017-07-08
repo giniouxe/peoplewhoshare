@@ -2,6 +2,42 @@ fr:
   pages:
     home:
       find_place: 'Trouver un lieu de partage'
+      create_new_place: 'Créer un nouveau lieu de partage'
   places:
     new:
-      create_place: 'Créer un lieu pour partager des trucs'
+      create_place: 'Créer un lieu de partage'
+    create:
+      create_place_sucess: 'Bravo! Vous avez créé un nouveau lieu de partage.'
+      create_place_failure: 'Arf! La création de votre lieu de partage a rencontré un petit problème : %{error}'
+    show:
+      location: 'Emplacement'
+    edit:
+      edit_place: 'Edit %{place}'
+  active_record:
+    models:
+      place:
+        one: 'Lieu'
+        other: 'Lieux'
+    attributes:
+      place:
+        name: 'Nom'
+        description: 'Description'
+        address: 'Adresse'
+        city: 'Ville'
+        zipcode: 'Code postal'
+        country: 'Pays'
+    errors:
+      models:
+        place:
+          attributes:
+            zipcode:
+              not_a_number: 'doit être composé de chiffres'
+  simple_form:
+    labels:
+      defaults:
+        name: 'Nom'
+        description: 'Description'
+        address: 'Adresse'
+        city: 'Ville'
+        zipcode: 'Code postal'
+        country: 'Pays'
