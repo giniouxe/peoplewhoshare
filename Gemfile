@@ -10,6 +10,8 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 
+gem 'foundation-rails', '6.3.1'
+
 gem 'country_select'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -23,8 +25,6 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
-gem 'foundation-rails'
 
 gem 'simple_form'
 
