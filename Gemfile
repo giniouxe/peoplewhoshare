@@ -13,6 +13,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'foundation-rails', '6.3.1'
 
 gem 'country_select'
+gem 'geocoder'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -38,6 +39,7 @@ gem 'simple_form'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  gem 'dotenv-rails'
   gem 'byebug'
   gem 'pry'
   gem 'pry-rails'

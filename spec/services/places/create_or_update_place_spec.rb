@@ -7,6 +7,11 @@ RSpec.describe Places::CreateOrUpdatePlace do
     context 'on creation' do
       let(:place) { FactoryGirl.build(:place) }
 
+      it 'geocodes the place' do
+        expect(Places::GeocodePlace).to receive(:run).with(place)
+        run
+      end
+
       it 'creates a place' do
         expect { run }.to change(Place, :count).by(1)
       end
@@ -30,10 +35,15 @@ RSpec.describe Places::CreateOrUpdatePlace do
         expect(place.reload.name).to eq('New name')
       end
 
+      it 'geocodes the place' do
+        expect(Places::GeocodePlace).to receive(:run).with(place)
+        run
+      end
+
       context 'when the place is invalid' do
         before { place.name = nil }
 
-        it 'updates the place' do
+        it 'does not update the place' do
           run
           expect(place.reload.name).to eq('Old name')
         end

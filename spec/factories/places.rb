@@ -1,9 +1,9 @@
 FactoryGirl.define do
   factory :place do
     name 'Torchwood'
-    address 'Roal Dahl Plass'
+    address 'Roald Dahl Plass, Cardiff Bay'
     city 'Cardiff'
-    zipcode 'CF 029'
-    country 'Wales'
+    zipcode 'CF10 5AL'
+    country 'United Kingdom'
   end
 end
